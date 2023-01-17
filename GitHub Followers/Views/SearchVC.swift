@@ -12,6 +12,10 @@ class SearchVC: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField(placeholder: "Enter a username", borderColor: UIColor.systemGray4.cgColor)
     let actionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
+    var isUsernameEmpty: Bool {
+        return !usernameTextField.text!.isEmpty
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,7 @@ class SearchVC: UIViewController {
         configureTextField()
         congifureButton()
         createKeyboardDismissGesture()
+        tabBarController?.tabBar.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,6 +35,17 @@ class SearchVC: UIViewController {
     func createKeyboardDismissGesture() {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
+    }
+    
+    @objc func pushUsernameToFollowerListVC() {
+        guard isUsernameEmpty else {
+            presentGFAlertOnMainThred(title: "Username field is empty", message: "Please enter a username to look for 🧐", buttonTitle: "Got it!")
+            return
+        }
+        let followerListVC = FollowerListVC()
+        followerListVC.username = usernameTextField.text
+        followerListVC.title = usernameTextField.text
+        navigationController?.pushViewController(followerListVC, animated: true)
     }
     
     func configureImageLogoView() {
@@ -59,6 +75,7 @@ class SearchVC: UIViewController {
     
     func congifureButton() {
         view.addSubview(actionButton)
+        actionButton.addTarget(self, action: #selector(pushUsernameToFollowerListVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -48),
@@ -71,7 +88,7 @@ class SearchVC: UIViewController {
 
 extension SearchVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("Did tap return")
+        pushUsernameToFollowerListVC()
         return true
     }
 }

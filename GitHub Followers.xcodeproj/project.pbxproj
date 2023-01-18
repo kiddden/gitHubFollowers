@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800CDCEF297840C400330B7C /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDCEE297840C400330B7C /* GFAlertContainerView.swift */; };
 		8029D3402976F2210092EB4E /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029D33F2976F2210092EB4E /* GFTitleLabel.swift */; };
 		8029D3422976F30D0092EB4E /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029D3412976F30D0092EB4E /* GFBodyLabel.swift */; };
 		8029D3442976F3860092EB4E /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029D3432976F3860092EB4E /* GFAlertVC.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		800CDCEE297840C400330B7C /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 		8029D33F2976F2210092EB4E /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		8029D3412976F30D0092EB4E /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		8029D3432976F3860092EB4E /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				80C1099F2975B3EB00D4BE16 /* GFTextField.swift */,
 				8029D33F2976F2210092EB4E /* GFTitleLabel.swift */,
 				8029D3412976F30D0092EB4E /* GFBodyLabel.swift */,
+				800CDCEE297840C400330B7C /* GFAlertContainerView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -91,7 +94,6 @@
 				80C109892975A56400D4BE16 /* ViewController.swift */,
 				80C1098E2975A56500D4BE16 /* Assets.xcassets */,
 				80C109902975A56500D4BE16 /* LaunchScreen.storyboard */,
-				80C109932975A56500D4BE16 /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -115,6 +117,7 @@
 		80C109842975A56400D4BE16 /* GitHub Followers */ = {
 			isa = PBXGroup;
 			children = (
+				80C109932975A56500D4BE16 /* Info.plist */,
 				8029D34A297709580092EB4E /* Support */,
 				8029D3492977090B0092EB4E /* Extensions */,
 				8029D348297708D90092EB4E /* Custom Views */,
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800CDCEF297840C400330B7C /* GFAlertContainerView.swift in Sources */,
 				8029D3462976F9170092EB4E /* UIViewController+Extension.swift in Sources */,
 				80C1099C2975AAB400D4BE16 /* FavoritesVC.swift in Sources */,
 				80C1099A2975AA9000D4BE16 /* SearchVC.swift in Sources */,

@@ -9,7 +9,7 @@ import UIKit
 
 class GFAlertVC: UIViewController {
     
-    let containerView = UIView()
+    let containerView = GFAlertContainerView()
     let titleLabel = GFTitleLabel(textAlignment: .center, fontSize: 20)
     let messageLabel = GFBodyLabel(textAlignment: .center)
     let actionButton = GFButton(backgroundColor: .systemPink, title: "Got it!")
@@ -42,11 +42,6 @@ class GFAlertVC: UIViewController {
     
     func congifureContainerView() {
         view.addSubview(containerView)
-        containerView.backgroundColor = .systemBackground
-        containerView.layer.cornerRadius = 16
-        containerView.layer.borderWidth = 2
-        containerView.layer.borderColor = UIColor.white.cgColor
-        containerView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -91,11 +86,6 @@ class GFAlertVC: UIViewController {
             messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
             messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
             messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
-//            messageLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-//            messageLabel.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
-//            messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-//            messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding)
-            
         ])
     }
     

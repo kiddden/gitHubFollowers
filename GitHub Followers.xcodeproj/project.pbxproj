@@ -12,6 +12,9 @@
 		800CDCF42978477C00330B7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDCF32978477C00330B7C /* User.swift */; };
 		800CDCF729784AAC00330B7C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDCF629784AAC00330B7C /* NetworkManager.swift */; };
 		800CDCFA2978522600330B7C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDCF92978522600330B7C /* ErrorMessage.swift */; };
+		800CDCFD2978590E00330B7C /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDCFC2978590E00330B7C /* FollowerCell.swift */; };
+		800CDCFF2978597500330B7C /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDCFE2978597500330B7C /* GFAvatarImageView.swift */; };
+		800CDD0129786CFC00330B7C /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800CDD0029786CFC00330B7C /* UIHelper.swift */; };
 		8029D3402976F2210092EB4E /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029D33F2976F2210092EB4E /* GFTitleLabel.swift */; };
 		8029D3422976F30D0092EB4E /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029D3412976F30D0092EB4E /* GFBodyLabel.swift */; };
 		8029D3442976F3860092EB4E /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8029D3432976F3860092EB4E /* GFAlertVC.swift */; };
@@ -34,6 +37,9 @@
 		800CDCF32978477C00330B7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		800CDCF629784AAC00330B7C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		800CDCF92978522600330B7C /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		800CDCFC2978590E00330B7C /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		800CDCFE2978597500330B7C /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		800CDD0029786CFC00330B7C /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		8029D33F2976F2210092EB4E /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
 		8029D3412976F30D0092EB4E /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		8029D3432976F3860092EB4E /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
@@ -84,8 +90,17 @@
 			isa = PBXGroup;
 			children = (
 				800CDCF92978522600330B7C /* ErrorMessage.swift */,
+				800CDD0029786CFC00330B7C /* UIHelper.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		800CDCFB297858F000330B7C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				800CDCFC2978590E00330B7C /* FollowerCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		8029D347297708BE0092EB4E /* Views */ = {
@@ -101,12 +116,14 @@
 		8029D348297708D90092EB4E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				800CDCFB297858F000330B7C /* Cells */,
 				8029D3432976F3860092EB4E /* GFAlertVC.swift */,
 				80C1099D2975B19900D4BE16 /* GFButton.swift */,
 				80C1099F2975B3EB00D4BE16 /* GFTextField.swift */,
 				8029D33F2976F2210092EB4E /* GFTitleLabel.swift */,
 				8029D3412976F30D0092EB4E /* GFBodyLabel.swift */,
 				800CDCEE297840C400330B7C /* GFAlertContainerView.swift */,
+				800CDCFE2978597500330B7C /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -234,6 +251,8 @@
 			files = (
 				800CDCEF297840C400330B7C /* GFAlertContainerView.swift in Sources */,
 				800CDCFA2978522600330B7C /* ErrorMessage.swift in Sources */,
+				800CDCFF2978597500330B7C /* GFAvatarImageView.swift in Sources */,
+				800CDD0129786CFC00330B7C /* UIHelper.swift in Sources */,
 				800CDCF2297846FE00330B7C /* Follower.swift in Sources */,
 				8029D3462976F9170092EB4E /* UIViewController+Extension.swift in Sources */,
 				80C1099C2975AAB400D4BE16 /* FavoritesVC.swift in Sources */,
@@ -243,6 +262,7 @@
 				80C1098A2975A56400D4BE16 /* ViewController.swift in Sources */,
 				80C109862975A56400D4BE16 /* AppDelegate.swift in Sources */,
 				800CDCF42978477C00330B7C /* User.swift in Sources */,
+				800CDCFD2978590E00330B7C /* FollowerCell.swift in Sources */,
 				8029D3442976F3860092EB4E /* GFAlertVC.swift in Sources */,
 				80C109882975A56400D4BE16 /* SceneDelegate.swift in Sources */,
 				8029D3402976F2210092EB4E /* GFTitleLabel.swift in Sources */,
@@ -316,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -370,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -393,6 +413,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,6 +443,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

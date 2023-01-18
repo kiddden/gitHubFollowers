@@ -39,7 +39,7 @@ class SearchVC: UIViewController {
     
     @objc func pushUsernameToFollowerListVC() {
         guard isUsernameEmpty else {
-            presentGFAlertOnMainThred(title: "Username field is empty", message: "Please enter a username to look for 🧐", buttonTitle: "Got it!")
+            presentGFAlertOnMainThread(title: "Username field is empty", message: "Please enter a username to look for 🧐", buttonTitle: "Got it!")
             return
         }
         let followerListVC = FollowerListVC()

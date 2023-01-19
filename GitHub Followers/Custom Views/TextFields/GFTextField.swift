@@ -40,5 +40,4 @@ class GFTextField: UITextField {
         autocorrectionType = .no
         returnKeyType = .go
     }
-
 }

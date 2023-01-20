@@ -53,24 +53,20 @@ class NetworkManager {
         
         guard let url = URL(string: endpoint) else {
             completion(.failure(.invalidUsername))
-            #warning("change")
             return
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let _ = error {
                 completion(.failure(.unableToComplete))
-                #warning("change")
                 return
             }
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 completion(.failure(.invalidResponse))
-                #warning("change")
                 return
             }
             guard let data = data else {
                 completion(.failure(.invalidData))
-                #warning("change")
                 return
             }
             do {
@@ -80,7 +76,6 @@ class NetworkManager {
                 completion(.success(user))
             } catch {
                 completion(.failure(.invalidData))
-                #warning("change")
             }
         }
         

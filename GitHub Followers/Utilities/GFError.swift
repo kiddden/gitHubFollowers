@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GitHub Followers
 //
-//  Created by Eugene Ned on 18.01.2023.
+//  Created by Eugene Ned on 20.01.2023.
 //
 
 import Foundation

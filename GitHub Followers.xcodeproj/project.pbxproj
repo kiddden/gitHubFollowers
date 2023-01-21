@@ -40,6 +40,7 @@
 		80C46728297AF15D0081E1A4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C46727297AF15D0081E1A4 /* Date+Extension.swift */; };
 		80C4672A297AF1890081E1A4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C46729297AF1890081E1A4 /* String+Extension.swift */; };
 		80E23891297AFC9A00F455BC /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E23890297AFC9A00F455BC /* GFFollowerItemVC.swift */; };
+		80E23893297C302F00F455BC /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E23892297C302F00F455BC /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		80C46727297AF15D0081E1A4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		80C46729297AF1890081E1A4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		80E23890297AFC9A00F455BC /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
+		80E23892297C302F00F455BC /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = ../../../../../../../../Downloads/PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				800CDCF629784AAC00330B7C /* NetworkManager.swift */,
+				80E23892297C302F00F455BC /* PersistenceManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				80C1098A2975A56400D4BE16 /* ViewController.swift in Sources */,
 				80C109862975A56400D4BE16 /* AppDelegate.swift in Sources */,
 				80E23891297AFC9A00F455BC /* GFFollowerItemVC.swift in Sources */,
+				80E23893297C302F00F455BC /* PersistenceManager.swift in Sources */,
 				800CDCF42978477C00330B7C /* User.swift in Sources */,
 				80027FA5297ADAE00036C0DF /* GFSecondaryTitleLabel.swift in Sources */,
 				800CDCFD2978590E00330B7C /* FollowerCell.swift in Sources */,

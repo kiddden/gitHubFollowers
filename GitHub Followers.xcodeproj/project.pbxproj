@@ -41,6 +41,7 @@
 		80C4672A297AF1890081E1A4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C46729297AF1890081E1A4 /* String+Extension.swift */; };
 		80E23891297AFC9A00F455BC /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E23890297AFC9A00F455BC /* GFFollowerItemVC.swift */; };
 		80E23893297C302F00F455BC /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E23892297C302F00F455BC /* PersistenceManager.swift */; };
+		80E23895297C4D4E00F455BC /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E23894297C4D4E00F455BC /* FavoriteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		80C46729297AF1890081E1A4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		80E23890297AFC9A00F455BC /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		80E23892297C302F00F455BC /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = ../../../../../../../../Downloads/PersistenceManager.swift; sourceTree = "<group>"; };
+		80E23894297C4D4E00F455BC /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				800CDCFC2978590E00330B7C /* FollowerCell.swift */,
+				80E23894297C4D4E00F455BC /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				80027FA3297ADA840036C0DF /* GFUserInfoHeaderVC.swift in Sources */,
 				80027F9D2979E3AA0036C0DF /* GFEmptyStateView.swift in Sources */,
 				80C109882975A56400D4BE16 /* SceneDelegate.swift in Sources */,
+				80E23895297C4D4E00F455BC /* FavoriteCell.swift in Sources */,
 				8029D3402976F2210092EB4E /* GFTitleLabel.swift in Sources */,
 				80C109A22975C54A00D4BE16 /* FollowerListVC.swift in Sources */,
 				80C109A02975B3EB00D4BE16 /* GFTextField.swift in Sources */,

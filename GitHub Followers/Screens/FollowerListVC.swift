@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FollowerListVCDelegate: AnyObject {
-    func didRequestFollowres(for username: String)
+    func didRequestFollowers(for username: String)
 }
 
 class FollowerListVC: UIViewController {
@@ -187,7 +187,7 @@ extension FollowerListVC: UISearchResultsUpdating, UISearchBarDelegate {
 }
 
 extension FollowerListVC: FollowerListVCDelegate {
-    func didRequestFollowres(for username: String) {
+    func didRequestFollowers(for username: String) {
         self.username = username
         title = username
         page = 1

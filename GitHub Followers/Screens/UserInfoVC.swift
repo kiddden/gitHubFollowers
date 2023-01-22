@@ -56,7 +56,7 @@ class UserInfoVC: UIViewController {
         self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
         self.add(childVC: repoItemVC, to: self.itemViewOne)
         self.add(childVC: followerItemVC, to: self.itemViewTwo)
-        self.dateLabel.text = "GitHub since \(user.createdAt.convertToDisplayFormat())"
+        self.dateLabel.text = "GitHub since \(user.createdAt.convertToMonthYearFormat())"
     }
     
     @objc func dismissVC() {
@@ -121,7 +121,7 @@ extension UserInfoVC: UserInfoVCDelegate {
             presentGFAlertOnMainThread(title: "No followers", message: "This user doesn't have any followers 😟", buttonTitle: "Got you")
             return
         }
-        delegate.didRequestFollowres(for: user.login)
+        delegate.didRequestFollowers(for: user.login)
         dismissVC()
     }
 }
